@@ -11,6 +11,7 @@
 ## Install
 
 ```bash
+brew trust --tap rodolphe37/easy-ci   # Homebrew 7+ asks you to approve third-party taps
 brew tap rodolphe37/easy-ci
 brew install --cask easy-ci
 ```

@@ -16,14 +16,13 @@ cask "easy-ci" do
   sha256 arm:   "15114900f979635aeb035b6487137f4422d6edc85246a66bef1dd4781701f370",
          intel: "ead066dedbd1acdbc471b209bbb2331b03d9738f28da4778b0034a0108e74bf7"
 
-  url "https://github.com/rodolphe37/easy-ci/releases/download/v#{version}/EasyCI-macOS-#{arch}.zip",
-      verified: "github.com/rodolphe37/easy-ci/"
+  url "https://github.com/rodolphe37/easy-ci/releases/download/v#{version}/EasyCI-macOS-#{arch}.zip"
   name "Easy CI"
   desc "Superviser, modifier et générer vos pipelines CI/CD (GitHub, GitLab, Bitbucket)"
   homepage "https://github.com/rodolphe37/easy-ci"
 
   auto_updates false
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "EasyCI.app"
 
